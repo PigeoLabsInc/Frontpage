@@ -1,8 +1,6 @@
 window.switchPeep = function(peep, fade) {
 	peep = "#"+peep;
-	if(! fade) {
-		fade = 'in';
-	}
+	if(! fade) fade = 'in';
 	$(peep).fadeOut('fast');
 	if(fade == 'in') {
 		$(peep).addClass('legoman');
