@@ -2,30 +2,35 @@
  * Peep images.
  * With the hover of legomans, because we are cool like that!
  */
+.peep {
+	background-size: 123px 123px !important;
+	background-position: center !important;
+}
+
 #matt {
-	background: url('../img/default_profile.jpg');
+	background: url('../img/profiles/matt.jpeg');
 }
 #matt.legoman {
-	background: url('../img/profile.jpg');
+	background: url('../img/profiles/matt-lego.jpeg');
 }
 
 #cassandra {
-
+	background: url('../img/profiles/cassandra.jpg');
 }
 #cassandra .legoman {
-
+	background: url('../img/profiles/cassandra-lego.jpeg');
 }
 
 #graham {
-
+	background: url('../img/profiles/graham.jpeg');
 }
 #graham .legoman {
-
+	background: url('../img/profiles/graham-lego.jpeg');
 }
 
 #kirk {
-
+	background: url('../img/profiles/kirk.png');
 }
 #kirk .legoman {
-
+	background: url('../img/profiles/kirk-lego.jpeg');
 }
