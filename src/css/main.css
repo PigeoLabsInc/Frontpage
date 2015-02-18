@@ -75,7 +75,7 @@ a.btn {
     border: solid 1px #000;
     border-radius: 150px;
     color: transparent;
-    background: #222 url(../img/profile.jpg) no-repeat center;
+    # background: #222 url(../img/profile.jpg) no-repeat center;
 }
 #about a:nth-of-type(odd) {
     margin-right: 20px;

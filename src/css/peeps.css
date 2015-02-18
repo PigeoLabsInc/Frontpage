@@ -3,10 +3,10 @@
  * With the hover of legomans, because we are cool like that!
  */
 #matt {
-
+	background: url('../img/default_profile.jpg');
 }
-#matt .legoman {
-
+#matt.legoman {
+	background: url('../img/profile.jpg');
 }
 
 #cassandra {
