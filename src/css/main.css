@@ -64,6 +64,21 @@ a.btn {
     color: #FFF;
 }
 
+/* Platform section
+------------------------------- */
+#platform {
+    color: #FFF;
+    background: #222 url('../img/space-earth.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: -100px !important;
+}
+
+#platform a {
+    border-color: #FFF;
+    color: #FFF;
+}
+
 /* About section
 ------------------------------- */
 #about a.peep {
