@@ -80,3 +80,36 @@ a.btn {
 #about a:nth-of-type(odd) {
     margin-right: 20px;
 }
+
+.fancyform {
+	text-align: center !important;
+}
+
+.fancyform ul {
+	display: inline-block;
+	margin: 10px;
+}
+
+.fancyform ul > li {
+	width: 300px !important;
+	list-style: none;
+	padding: 10px;
+}
+
+.fancyform input, .fancyform textarea {
+	width: 100% !important;
+	font-size: 16px !important;
+}
+
+.fancyform input {
+	height: 40px;
+}
+
+.fancyform textarea {
+	height: 150px !important;
+}
+
+.fancyform input[type=submit] {
+	height: 75px !important;
+	font-size: 20px !important;
+}

@@ -1,3 +1,5 @@
+var debug = false; // console outputs enabled if true.
+
 window.switchPeep = function(peep, fade) {
 	peep = "#"+peep;
 	if(! fade) fade = 'in';
@@ -13,14 +15,14 @@ window.switchPeep = function(peep, fade) {
 
 $(function() {
 	// jQuery is loaded.
-	console.log('Loading Peeps');
+	if (debug === true) console.log('Loading Peeps');
 	$('.peep').hover(function() {
 		peep = $(this).attr('id');
-		console.log("Switching peep for "+peep);
+		if (debug === true) console.log("Switching peep for "+peep);
 		window.switchPeep(peep);
 	}, function() {
 		peep = $(this).attr('id');
-		console.log('Switching out peep for '+peep);
+		if (debug === true) console.log('Switching out peep for '+peep);
 		window.switchPeep(peep, 'out');
 	});
 });
