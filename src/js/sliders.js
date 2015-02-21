@@ -1,18 +1,43 @@
-	var section = 'landing';
-	var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
-	$('body').bind(mousewheelevt, function(e){
+console.log('Starting up sliders!');
 
-    		var evt = window.event || e //equalize event object     
-    		evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
-		var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+// Slider config.
+var sliders = (
+	'landing',
+	'about',
+	'platform',
+	'contact'
+);
 
-    		if(delta > 0) {
-       			 //scroll up
-    			section = $('#'+section).next('.section').attr('id');
-		}
-    		else{
-       			# section = $('#'+section).prev('.section').attr('id');
-    		}
-		console.log(section)
-		window.location.href = "/#"+section;
-	});
+var default_slider = 'landing';
+
+// Config finished, do not touch the following code unless you know what you are doing!
+var current_slider;
+
+if(location.hash != '') {
+	current_slider = location.hash.replace('#', ''); // remove # from value.
+}
+else {
+	console.log('binding slider to default!');
+	current_slider = 'landing'; // by default, landing.
+}
+
+function slide(direction) {
+        index = sliders.indexOf(current_slider); // get index value of current slide.
+	next = '';
+
+	if(direction === 'up') {
+		if(index >= 0 && index < sliders.length - 1)
+			next = sliders[index+1];
+			console.log('next slide: '+next);
+	}
+	if(direction === 'down') {
+		if(index >= 0 && index < sliders.length - 1)
+			next = sliders[index-1];
+			console.log('next slide: '+next);
+	}
+	
+	// slide to next.
+	$("html, body").animate({
+        	scrollTop: $('#'+next).offset().top
+    	}, 100);
+}

@@ -13,7 +13,7 @@ h1, h3 {
     font-size: 36px;
 }
 
-h2, p {
+h2, p {margin-top: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     font-size: 20px;
@@ -71,12 +71,24 @@ a.btn {
     background: #222 url('../img/space-earth.jpg') no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-position-x: -100px !important;
+    background-position-y: -100px !important;
 }
 
 #platform a {
     border-color: #FFF;
     color: #FFF;
+}
+
+#platform_title {
+    margin: 0 auto 5px auto;
+    text-align: center;
+    width: 300px;
+    padding: 3px;
+    font-weight: 900;
+}
+
+#platform_desc {
+    margin-top: 20px;
 }
 
 /* About section
@@ -90,11 +102,14 @@ a.btn {
     border: solid 1px #000;
     border-radius: 150px;
     color: transparent;
-    # background: #222 url(../img/profile.jpg) no-repeat center;
 }
+
 #about a:nth-of-type(odd) {
     margin-right: 20px;
 }
+
+/* Fancy Form on Contact Section
+------------------------------- */
 
 .fancyform {
 	text-align: center !important;
@@ -118,13 +133,29 @@ a.btn {
 
 .fancyform input {
 	height: 40px;
+    text-align: center;
 }
 
 .fancyform textarea {
 	height: 150px !important;
+    text-align: center;
 }
 
 .fancyform input[type=submit] {
 	height: 75px !important;
 	font-size: 20px !important;
+}
+
+/* Footer Section
+------------------------------- */
+
+#footer {
+    color: #6E6E6E;
+    padding: 20px;
+    text-align: center;
+    margin: auto auto;
+}
+#footer a {
+    color: #6E6E6E !important;
+    text-decoration: none;
 }
