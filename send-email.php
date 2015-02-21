@@ -20,7 +20,7 @@ if($method === "POST") {
 	$email = $_POST['email'];
 	$message = $_POST['message'];
 
-	if(isset($name) && isset($email) && isset($message)) {
+	if(isset($name) && $name !==  '' && isset($email) && $email !== '' && isset($message) && $message !== '') {
 		if(send_mail($name, $email, $message)) {
 			header('Location: /?form_success=true');
 		}

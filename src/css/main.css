@@ -150,6 +150,7 @@ a.btn {
 ------------------------------- */
 
 #footer {
+    font-family: 'Raleway', sans-serif;
     color: #6E6E6E;
     padding: 20px;
     text-align: center;
@@ -158,4 +159,26 @@ a.btn {
 #footer a {
     color: #6E6E6E !important;
     text-decoration: none;
+}
+
+/* Errors and Success!
+------------------------------ */
+.error, .success {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 3px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.error {
+    border: solid 1px red;
+    color: red;
+}
+
+.success {
+    border: solid 1px green;
+    color: green;
 }
