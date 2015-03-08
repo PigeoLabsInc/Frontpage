@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Pigeo Labs - We're in the lab with a pen and a pad.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Quicksand|Raleway:400,200" rel="stylesheet" type="text/css">
     <link href="src/css/main.css" rel="stylesheet" type="text/css">
     <link href="src/css/peeps.css" rel="stylesheet" type="text/css">
